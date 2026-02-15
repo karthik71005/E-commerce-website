@@ -1,0 +1,137 @@
+Middleware Exception: 1 validation error:
+  {'type': 'string_type', 'loc': ('response', '_id'), 'msg': 'Input should be a valid string', 'input': ObjectId('6991b55b58bb43578d6a9f1b')}
+
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\app\api\product_routes.py", line 17, in create_product
+    POST /api/v1/products/
+Traceback (most recent call last):
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\app\middleware\exception_handler.py", line 9, in dispatch
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\routing.py", line 446, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\routing.py", line 284, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation error:
+  {'type': 'string_type', 'loc': ('response', '_id'), 'msg': 'Input should be a valid string', 'input': ObjectId('6991b55b58bb43578d6a9f1b')}
+
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\app\api\product_routes.py", line 17, in create_product
+    POST /api/v1/products/
+Middleware Exception: 1 validation error:
+  {'type': 'string_type', 'loc': ('response', '_id'), 'msg': 'Input should be a valid string', 'input': ObjectId('6991b5862a14434a6602ec9a')}
+
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\app\api\product_routes.py", line 17, in create_product
+    POST /api/v1/products/
+Traceback (most recent call last):
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\app\middleware\exception_handler.py", line 9, in dispatch
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\routing.py", line 446, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\routing.py", line 284, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation error:
+  {'type': 'string_type', 'loc': ('response', '_id'), 'msg': 'Input should be a valid string', 'input': ObjectId('6991b5862a14434a6602ec9a')}
+
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\app\api\product_routes.py", line 17, in create_product
+    POST /api/v1/products/
+Middleware Exception: Unable to serialize unknown type: <class 'bson.objectid.ObjectId'>
+Traceback (most recent call last):
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\app\middleware\exception_handler.py", line 9, in dispatch
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\routing.py", line 119, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\routing.py", line 105, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\routing.py", line 446, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\routing.py", line 290, in serialize_response
+    return field.serialize(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\fastapi\_compat\v2.py", line 174, in serialize
+    return self._type_adapter.dump_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\esthe\Desktop\Courses\portfoli-projects\server\.venv\Lib\site-packages\pydantic\type_adapter.py", line 605, in dump_python
+    return self.serializer.to_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.PydanticSerializationError: Unable to serialize unknown type: <class 'bson.objectid.ObjectId'>

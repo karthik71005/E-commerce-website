@@ -1,0 +1,51 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.sqlite
+*.sqlite3
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node.js / Frontend
+node_modules/
+dist/
+build/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+.env.local
+.env.*.local
+*.spec
+htmlcov/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.mo
+*.pot
+
+# Project Specific
+server/__pycache__/
+server/.venv/
+server/venv/
+client/node_modules/
+client/dist/
+client/.env
+client/coverage/
